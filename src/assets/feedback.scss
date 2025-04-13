@@ -1,0 +1,128 @@
+.feedback {
+    background-color: whitesmoke;
+    height: 70vh;
+    width: 100%;
+
+    @media screen and (max-width: 350px) {
+        &_top{
+            height: 25% !important ;
+        }
+        &_bottom{
+            height: 75% !important;
+        }
+    }
+
+    &_top {
+        height: 40%;
+        text-align: center;
+        
+        @media screen and (max-width: 925px) {
+            padding-top: 30px;
+            &_heading {
+                font-size: 40px !important;
+            }
+
+            &_para {
+                font-size: 16px !important;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            &_heading {
+                font-size: 20px !important;
+            }
+
+            &_para {
+                font-size: 12px !important;
+            }
+        }
+
+        &_heading {
+            font-size: 50px;
+        }
+
+        &_para {
+            font-size: 18px;
+            color: rgb(182, 182, 182);
+        }
+    }
+
+    &_bottom::-webkit-scrollbar {
+        display: none;
+    }
+
+    &_bottom {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 20px;
+        scroll-behavior: smooth;
+
+        .cardContainer {
+            width: 350px;
+            height: 220px;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 10px;
+            flex-shrink: 0;
+
+            @media screen and (max-width: 350px) {
+                width: 300px;
+                height: 250px;
+            }
+
+            &_stars {
+                gap: 10px;
+                display: flex;
+                height: 20%;
+
+                i {
+                    color: rgb(255, 217, 0);
+                }
+            }
+
+
+            &_para {
+                height: 50%;
+
+                p {
+                    font-size: 16px;
+                    color: rgb(182, 182, 182);
+                }
+            }
+
+            &_profile {
+                height: 30%;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                &_img {
+                    height: 70%;
+                    display: flex;
+
+                    img {
+                        margin-top: 5px;
+                        height: 80%;
+                        border-radius: 50%;
+                    }
+                }
+
+                &_about {
+                    :nth-child(1) {
+                        margin: -2px 0 0 0;
+                        font-weight: 500;
+                    }
+
+                    :nth-child(2) {
+                        margin: 0;
+                        font-size: 14px;
+                        color: rgb(182, 182, 182);
+                    }
+                }
+            }
+        }
+    }
+}
