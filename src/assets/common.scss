@@ -1,0 +1,16 @@
+.hover-style {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; // Smooth transition for hover effects
+    // &:hover {
+    //     transform: scale(1.05); // Slightly enlarges the button
+    //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Adds subtle shadow
+    // }
+
+    &:active {
+        transform: scale(0.95); // Adds a press-down effect
+    }
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

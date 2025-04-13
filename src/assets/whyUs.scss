@@ -1,0 +1,90 @@
+.wu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    &_top {
+        height: auto;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &_hading {
+            font-size: 45px;
+            margin: 20px 0px;
+        }
+
+        &_para {
+            font-weight: 500;
+            color: rgb(103, 103, 103);
+        }
+
+        &_cards {
+            margin-top: 25px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+
+            &_card {
+                width: 350px;
+                height: 220px;
+                background-color: whitesmoke;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                &_top {
+                    height: 30%;
+                    text-align: start;
+
+                    &_icon {
+                        background-color: #002847;
+                        color: white;
+                        margin: 10px 0px 0px 10px;
+                        font-size: 16px;
+                        outline: none;
+                        border: none;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                }
+
+                &_bottom {
+                    text-align: start;
+                    height: 70%;
+                    &_content{
+                        padding: 10px 0px 0px 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 60%;
+                        label {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+    
+                        p {
+                            color: rgb(103, 103, 103);
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        &_top {
+            &_hading {
+                font-size: 25px;
+            }
+            &_cards{
+                gap: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,313 @@
+.pp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 925px) {
+        height: auto;
+    }
+
+    &_container {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &_left {
+            width: 400px;
+            height: 100%;
+            gap: 5px;
+
+            &_top {
+                height: 35%;
+                width: 100%;
+
+                &_card {
+                    height: 98%;
+                    border-radius: 10px;
+                    background-color: #002847;
+                    color: whitesmoke;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    &_topPara {
+                        font-size: 16px;
+                    }
+
+                    &_dropdown {
+                        width: 95%;
+                        border-radius: 5px;
+                        padding: 7px;
+                        margin-bottom: 5px;
+                        outline: none;
+                    }
+
+                    &_bottomPara {
+                        font-size: 14px;
+                        color: rgb(182, 182, 182);
+
+                    }
+
+                }
+            }
+
+            &_bottom {
+                border-radius: 10px;
+                background-color: whitesmoke;
+                border: 1px solid #d2d2d2;
+                height: 65%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &_heading {
+                    width: 95%;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                &_chart {
+                    width: 95%;
+                    height: 90%;
+                }
+            }
+        }
+
+        &_right {
+            width: calc(100% - 400px);
+            height: 100%;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            border: 1px solid #d2d2d2;
+            padding: 10px;
+
+            &_top {
+                height: 35%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px 10px;
+
+                @media screen and (max-width: 725px) {
+                    height: 400px !important;
+                }
+
+                &_heading {
+                    width: 100%;
+                    font-size: 30px;
+                    font-weight: 600;
+
+                    @media screen and (max-width: 1270px) {
+                        font-size: 25px;
+                    }
+
+                    @media screen and (max-width: 925px) {
+                        font-size: 20px;
+                    }
+                }
+
+                .cardContainer {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px;
+                    flex-wrap: wrap;
+
+                    @media screen and (max-width: 925px) {
+                        height: 80%;
+                        justify-content: center;
+                    }
+
+                    &_card {
+                        width: 300px;
+                        height: 120px;
+                        border-radius: 10px;
+                        background-color: white;
+                        padding: 20px 20px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        @media screen and (max-width: 1440px) {
+                            width: 250px;
+                            height: 100px;
+                            padding: 10px 10px;
+
+                            &_bottom {
+                                font-size: 28px !important;
+                                font-weight: 200;
+                            }
+                        }
+
+                        @media screen and (max-width: 1270px) {
+                            width: 200px;
+
+                            &_bottom {
+                                font-size: 25px !important;
+                            }
+                        }
+
+                        @media screen and (max-width: 1125px) {
+                            width: 160px;
+                        }
+
+                        @media screen and (max-width: 925px) {
+                            width: 100% !important;
+                            height: 80px !important;
+
+                            &_bottom {
+                                font-size: 20px !important;
+                            }
+                        }
+
+
+                        &_top {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            div {
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 50%;
+                                background-color: #002847;
+                            }
+
+                            label {
+                                color: rgb(103, 103, 103);
+                                font-size: 15px;
+                            }
+                        }
+
+                        &_bottom {
+                            font-size: 32px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            &_bottom {
+                height: 65%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &_graph {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1025px) {
+            &_left {
+                width: 300px;
+            }
+
+            &_right {
+                width: calc(100% - 300px);
+            }
+        }
+
+        @media screen and (max-width: 925px) {
+            flex-direction: column;
+
+            &_left {
+                height: 200px;
+                display: flex;
+
+                &_top,
+                &_bottom {
+                    height: 100%;
+                    width: 50%;
+
+                }
+
+                &_top {
+                    &_card {
+                        height: 100%;
+                    }
+                }
+
+                &_bottom {
+
+                    &_heading {
+                        font-size: 16px;
+                    }
+                }
+
+                width: 100%;
+            }
+
+            &_right {
+                width: 100%;
+                height: calc(100% - 200px);
+                display: flex;
+
+                &_top {
+                    width: 40%;
+                    height: 400px;
+                }
+
+                &_bottom {
+                    width: 60%;
+                    height: 400PX;
+
+                }
+            }
+        }
+
+        @media screen and (max-width: 725px) {
+            flex-direction: column;
+
+            &_left {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+
+                &_top {
+                    height: 200px;
+                    width: 100%;
+
+                    &_card {
+                        &_dropdown {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &_bottom {
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+
+            &_right {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+
+                &_top {
+                    height: 250px;
+                    width: 100%;
+                }
+
+                &_bottom {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+        }
+    }
+
+}
