@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 export default function Main() {
     const [navbarVisible, setNavbarVisible] = useState(false);
@@ -52,7 +53,12 @@ export default function Main() {
                                 Product
                             </li>
                             <li>
-                                Tool
+                                <Link to="/render-circle" style={{
+                                    textDecoration: "none",
+                                    color: "black"
+                                }}>
+                                    Tool
+                                </Link>
                             </li>
                             <li>
                                 About
@@ -81,7 +87,12 @@ export default function Main() {
                         Product
                     </div>
                     <div className="mc_responsive_link">
-                        Tool
+                        <Link to="/render-circle" style={{
+                            textDecoration: "none",
+                            color: "black"
+                        }}>
+                            Tool
+                        </Link>
                     </div>
                     <div className="mc_responsive_link">
                         About

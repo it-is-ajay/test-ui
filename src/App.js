@@ -1,20 +1,16 @@
 import './assets/index.scss'
-import Main from './component/Main'
-import Performance from './component/Performance';
-import WhyUs from './component/WhyUs';
-import Feedback from './component/Feedback';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Partition from './component/Partition';
-import Footer from './component/Footer';
+import Dashboard from './component/Dashboard'
+import RenderCircle from './component/RenderCircle'
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return <>
-    <Main />
-    <WhyUs />
-    <Performance />
-    <Partition />
-    <Feedback />
-    <Footer />
+    <Routes>
+      <Route path='/' element={<Dashboard/>} />
+      <Route path='/render-circle' element={<RenderCircle/>} />
+    </Routes>
+    
   </>
 }
 
